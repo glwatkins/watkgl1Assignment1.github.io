@@ -23,6 +23,36 @@
             <h1>Contact</h1>
                 
         </article>
+
+        <form method="POST">
+            <fieldset>
+              <legend>Contact Us</legend>
+              <label for="firstname">First name </label>
+              <input type="text" name="firstname" />
+              <br />
+    
+              <label for="lastname">Last name </label>
+              <input type="text" name="lastname" />
+              <br />
+    
+              <label for="email">Email </label>
+              <input type="email" name="email" />
+              <br />
+
+              <label for="comment">Comment </label>
+              <input type="text" name="comment" /> 
+              <br />
+              
+              <input type="button" value="Submit" /> <!--on this button click is when we want to get the information from the form, now it just dose not submit-->
+              
+              <!-- <input type="submit" value="Submit" /> -->
+              <!-- <button>Submit</button> -->
+            </fieldset>
+            <!-- on submit prevent the default, look up how to do.
+            we are just stopping it from doing its subbmition, and giving a feed back message. -->
+          </form>
     </section>
+
+    
 </body>
 </html>
