@@ -1,0 +1,72 @@
+/*****************************************
+header
+******************************************/
+header
+{
+    display: flex;
+    width: 40%;
+    height: 10%;
+    background-color: gray;
+    padding: none;
+    margin: none;
+    
+}
+
+/*****************************************
+nav
+******************************************/ 
+nav
+{
+    display:flex;       
+    padding: 10px;
+    background-image: linear-gradient(#303030, #606060);
+    justify-content: center;
+    width: 60%;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    padding: 10px;
+}
+
+nav .active{
+    color: black;
+}
+
+/*****************************************
+media querries
+******************************************/
+
+.flexible{ width:100% }
+
+@media screen and (min-width: 1000px) {
+  /* For tablets: */
+  .flexible { width: 50% } 
+   
+  
+}
+
+@media screen and (min-width: 1024px) {
+  /* For desktop: */
+  .flexible { width: 33.333% }  
+  
+}
+
+@media screen and (max-width: 700px){
+    /*so that the nav changes to colum at below 800px*/
+    nav, .row{
+        flex-direction: column;
+    }
+
+    select{
+        padding: 50%;
+    }
+
+    section article select
+{
+    padding: 5%;
+    font-size: 120%;
+}
+}
