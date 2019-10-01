@@ -1,40 +1,81 @@
 /*****************************************
+body
+******************************************/
+body{
+    margin: 0px;
+    background-color: lightgrey;
+}
+
+.text {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.topNav{
+    display: flex;
+}
+
+.navHeader{
+    align-self:baseline;
+    background-color: gray;
+    
+    justify-content: center;
+    color: azure;
+    /* height: 100%; */
+    /* width: 50%; */
+}
+
+/*****************************************
 header
 ******************************************/
+
 header
 {
     display: flex;
-    width: 40%;
-    height: 10%;
-    background-color: gray;
-    padding: none;
-    margin: none;
-    
+    align-self:baseline;
+    background-color: gray;  
+    justify-content: center;
+    color: azure;
+    width: 50%;
 }
 
 /*****************************************
 nav
 ******************************************/ 
-nav
+ nav
 {
-    display:flex;       
-    padding: 10px;
-    background-image: linear-gradient(#303030, #606060);
-    justify-content: center;
-    width: 60%;
+    display: flex;
+    align-self:baseline;
+    background-color: gray;
+    color: azure;   
+    justify-content:space-between;
+    margin-left:auto;
+    width: 50%;
+    
 }
 
 nav a{
     text-align: center;
     text-decoration: none;
     color: azure;
-    padding: 10px;
 }
 
-nav .active{
-    color: black;
+.sub{
+    display: none; 
+    position: absolute;  
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*****************************************
+text
+******************************************/
+.text{
+    display: flex;
+    align-self: baseline;
+}
 /*****************************************
 media querries
 ******************************************/
