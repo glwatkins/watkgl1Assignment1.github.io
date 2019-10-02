@@ -37,6 +37,7 @@ header
     justify-content: center;
     color: azure;
     width: 100%;
+    margin-right: auto;
 }
 
 /*****************************************
@@ -47,14 +48,12 @@ header nav
     display: flex;
     align-self:baseline;
     color: azure;   
-    justify-content:space-between;
     margin-left:auto;
-    justify-content: center;
     margin-top: 2%;
-    /* width: 60%; */
-    /* padding-top: 2.25%;
-    padding-bottom: 1.7%; */
-    font-size: 1.5rem;
+    width: 50%;
+    font-size: 1rem; 
+    justify-content: space-between;
+    z-index: 0;
 }
 
 nav a{
@@ -72,10 +71,17 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav a:hover .sub{
+    z-index: 200;
+    display: block;
+    text-decoration: underline;
+}
+
 /*****************************************
 text
 ******************************************/
 .row{
+    z-index: 0;
     display: flex;
     align-self: baseline;
     text-align: left;
