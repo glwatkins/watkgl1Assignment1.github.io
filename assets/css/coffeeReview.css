@@ -36,22 +36,25 @@ header
     background-color: gray;  
     justify-content: center;
     color: azure;
-    width: 50%;
+    width: 100%;
 }
 
 /*****************************************
 nav
 ******************************************/ 
- nav
+header nav
 {
     display: flex;
     align-self:baseline;
-    background-color: gray;
     color: azure;   
     justify-content:space-between;
     margin-left:auto;
-    width: 50%;
-    
+    justify-content: center;
+    margin-top: 2%;
+    /* width: 60%; */
+    /* padding-top: 2.25%;
+    padding-bottom: 1.7%; */
+    font-size: 1.5rem;
 }
 
 nav a{
@@ -72,9 +75,11 @@ nav a:hover{
 /*****************************************
 text
 ******************************************/
-.text{
+.row{
     display: flex;
     align-self: baseline;
+    text-align: left;
+    margin: 2%;
 }
 /*****************************************
 media querries
