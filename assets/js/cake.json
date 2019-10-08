@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "typeOfCake": "Carrot Cake"
+    },
+
+    {
+        "id": "2",
+        "typeOfCake": "Chocolate Cake"
+    },
+
+    {
+        "id": "3",
+        "typeOfCake": "Vanilla Cake"
+    },
+
+    {
+        "id": "4",
+        "typeOfCake": "Chocolate Cake"
+    }
+]

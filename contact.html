@@ -4,58 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flowers | Contact</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/coffeeReview.css" />
+    <title>title</title>
 </head>
 <body>
-    <header>
-        <h1 id="titleHeadder">Flowers</h1>
-    </header>
-                  
-    <nav>
-        <a href="index.html">Home</a>
-        <a>Coffee</a>
-        <a href="types.html" class="childNav">Coffee types</a>
-        <a href="reviewOfCoffee.html" class="childNav">Review</a>
-        <a href="whatMakesGood.html" class="childNav">What makes it good</a>
-
-        <a href="contact.html">Contact</a>
-    </nav> 
+    <div class="topNav">
+                <header>
+                    <h1 class="navHeader">Title here</h1>
+                    <nav>
+                            <a href="index.html" class="active">Home</a>
+                            <a class="mainNav" href="#">Main menu</a>
+                            <div class="sub">
+                                <a href="types.html">Types</a>
+                                <a href="reviewOfCoffee.html">Review</a>
+                                <a href="whatMakesGood.html">Why</a>
+                            </div>
+                           
+                            <a href="contact.html">Contact</a>
+                    </nav>
+                </header>
+        
+        
     
-    <section>
-        <article>
-            <h1>Contact</h1>
-                
-        </article>
-
-        <form method="POST">
-            <fieldset>
-              <legend>Contact Us</legend>
-              <label for="firstname">First name </label>
-              <input type="text" name="firstname" />
-              <br />
-    
-              <label for="lastname">Last name </label>
-              <input type="text" name="lastname" />
-              <br />
-    
-              <label for="email">Email </label>
-              <input type="email" name="email" />
-              <br />
-
-              <label for="comment">Comment </label>
-              <input type="text" name="comment" /> 
-              <br />
-              
-              <input type="button" value="Submit" /> <!--on this button click is when we want to get the information from the form, now it just dose not submit-->
-              
-              <!-- <input type="submit" value="Submit" /> -->
-              <!-- <button>Submit</button> -->
-            </fieldset>
-            <!-- on submit prevent the default, look up how to do.
-            we are just stopping it from doing its subbmition, and giving a feed back message. -->
-          </form>
-    </section>
-
-    
+    </div>
+    <div class="row">     
+        <section>
+            <article>
+                <h1>Contact us</h1>
+                <form action="" method="POST">
+                    <fieldset>
+                      <legend>Contact details</legend>
+                      <label for="firstname">Name </label>
+                      <input type="text" name="firstname" />
+                      <br />
+        
+                      <label for="lastname">Comment</label>
+                      <input type="text" name="lastname" />
+                      <br />
+        
+                      <label for="email">Email </label>
+                      <input type="email" name="email" />
+                      <br />
+        
+                      <input type="submit" value="Submit" />
+                    </fieldset>
+                  </form>
+            </article>
+        </section>
+    </div>
 </body>
 </html>

@@ -15,10 +15,10 @@ body{
     display: flex;
 }
 
-.navHeader{
+#navHeader{
     align-self:baseline;
     background-color: gray;
-    
+    font-size: 2rem;
     justify-content: center;
     color: azure;
     /* height: 100%; */
@@ -37,7 +37,10 @@ header
     justify-content: center;
     color: azure;
     width: 100%;
-    margin-right: auto;
+    /* margin-right: auto; */
+    /* margin-right: 5%; */
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 /*****************************************
@@ -51,8 +54,7 @@ header nav
     margin-left:auto;
     margin-top: 2%;
     width: 50%;
-    font-size: 1rem; 
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 0;
 }
 
@@ -60,21 +62,30 @@ nav a{
     text-align: center;
     text-decoration: none;
     color: azure;
+    font-size: 1.5rem;
 }
 
 .sub{
-    display: none; 
+    /* display: none;  */
     position: absolute;  
+    z-index: 1;
+}
+
+.sub a {
+    display: block;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
 
-nav a:hover .sub{
-    z-index: 200;
+.mainNav{
+    position: relative;
+    display: inline-block;
+}
+
+.mainNav:hover .sub{
     display: block;
-    text-decoration: underline;
 }
 
 /*****************************************
@@ -87,6 +98,57 @@ text
     text-align: left;
     margin: 2%;
 }
+
+/*****************************************
+feild set / form
+******************************************/
+fieldset{
+    display: flex;
+    /* justify-content: center; */
+    padding-left: auto;
+    color: #303030;
+    border-top-color:  #303030;
+}
+
+form{
+    /* display: flex; */
+    /* margin-left: auto; */
+    align-items: baseline;
+}
+
+input[type=text]
+{
+    background-color: #606060;
+    color: #fdfdfd;
+    margin: auto;
+    width: 50%;
+}
+
+input[type=email]
+{
+    background-color: #606060;
+    color: #fdfdfd;
+    margin: auto;
+    width: 50%;
+    
+}
+
+input[type=submit]
+{
+    background-color: #606060;
+    color: #fdfdfd;
+    margin: auto;
+    font-size: 120%;
+}
+
+label {
+    color: #fdfdfd;
+    font-size: 120%;
+    margin-left: 25%;
+    justify-content: baseline;
+    
+}
+
 /*****************************************
 media querries
 ******************************************/
