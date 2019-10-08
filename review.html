@@ -31,26 +31,30 @@
         <section>
             <article>
                 <h1>Contact us</h1>
-                <form action="" method="POST">
-                    <fieldset>
-                      <legend>Contact details</legend>
-                      <label for="firstname">Name </label>
-                      <input type="text" name="firstname" />
-                      <br />
-        
-                      <label for="lastname">Comment</label>
-                      <input type="text" name="lastname" />
-                      <br />
-        
-                      <label for="email">Email </label>
-                      <input type="email" name="email" />
-                      <br />
-        
-                      <input type="submit" value="Submit" />
-                    </fieldset>
-                  </form>
+                <h2>post box</h2>
+                    <textarea
+                        name="comment"
+                        id="comment-input"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <br />
+                    <input id="comment-data" type="button" value="Post" />
+                    <p id="comment-output"></p>
+                    <ul id="list-comment-output"></ul>
+                    <div id="commentSection"></div>         
+                    </article>
+                </section> 
+                </div>
+                <div> 
+                        <fieldset id="jsonOutput">
+                            <input type="button" id="ajax-json-btn" value="Load from json file"/>
+                        </fieldset>
+                      </div>
             </article>
         </section>
     </div>
+    
+    <script src="./assets/js/review.js"></script>
 </body>
 </html>
