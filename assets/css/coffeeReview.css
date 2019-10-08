@@ -33,14 +33,22 @@ header
 {
     display: flex;
     align-self:baseline;
-    background-color: gray;  
+    background-color: darkgray;  
     justify-content: center;
-    color: azure;
+    color: gray;
     width: 100%;
     /* margin-right: auto; */
     /* margin-right: 5%; */
     padding-right: 5%;
     padding-left: 5%;
+}
+
+header h2
+{
+   font-size: 1rem;
+   color: lightgrey;
+   padding-top: 1.7%;
+   margin-left: 0.7%;
 }
 
 /*****************************************
@@ -65,10 +73,15 @@ nav a{
     font-size: 1.5rem;
 }
 
+.mainNav:hover .sub{ 
+    display: block;
+    z-index: 1;
+}
+
 .sub{
     display: none; 
     position: absolute;  
-    z-index: 1;
+    
 }
 
 .sub a {
@@ -76,7 +89,7 @@ nav a{
 }
 
 nav a:hover{
-    text-decoration: underline;
+    text-decoration: line-through;
 }
 
 .mainNav{
@@ -84,9 +97,6 @@ nav a:hover{
     display: inline-block;
 }
 
-.mainNav:hover .sub{
-    display: block;
-}
 
 /*****************************************
 text

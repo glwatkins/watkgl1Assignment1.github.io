@@ -1,21 +1,31 @@
 [
     {
-        "id": "1",
-        "typeOfCake": "Carrot Cake"
+        "ID": "1",
+        "Type of cake": "Carrot Cake"
     },
 
     {
-        "id": "2",
-        "typeOfCake": "Chocolate Cake"
+        "ID": "2",
+        "Type of cake": "Chocolate Cake"
     },
 
     {
-        "id": "3",
-        "typeOfCake": "Vanilla Cake"
+        "ID": "3",
+        "Type of cake": "Vanilla Cake"
     },
 
     {
-        "id": "4",
-        "typeOfCake": "Chocolate Cake"
+        "ID": "4",
+        "Type of cake": "Chocolate Cake"
+    },
+
+    {
+        "ID": "5",
+        "Type of cake": "Marble Cake"
+    },
+
+    {
+        "ID": "6",
+        "Type of cake": "Lemon and Poppy Seed Cake"
     }
 ]
