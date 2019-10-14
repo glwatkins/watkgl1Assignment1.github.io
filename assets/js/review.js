@@ -32,9 +32,18 @@ const loadJson = () => {
       console.log(p)
       const parent = createoutPutDiv(p)  
       jsonOutput.append(parent) 
+      const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
+      estar.className = 'far fa-star'
+      parent.append(estar)  
       })
   })
 }
+
+document.addEventListener("click", (event) => {
+  if(event.target.matches(".far fa-star")){
+    event.target.closest(".far fa-star").remove()
+  }
+});
 
 //attaching to the button
 ajaxJsonBtn.addEventListener('click', loadJson)
@@ -46,16 +55,18 @@ const createoutPutDiv = (p) =>{
   parent.style.paddingBottom = "2vw" // just a bit of pading at the bottom of each entry
   parent.style.textIndent = "3vw"
   const keys =  Object.keys(p) // taking each object in p and assigning it to keys -- this is what allows us not to specify the definitive values(ie ID) there for make the json file scalible
-  
+ 
   //for each is a function so you need to writ like tis to itterate through the keys(each id/name)
   //items is just each id or firstName
   keys.forEach(item => {
     const val = p[item]
     const div = document.createElement("div")
-    //appaend the name of the item as well as the value in keys
+    //appaend the name of the item as well as the value in keys  
     div.innerHTML = `${item}: ${val}`
     parent.append(div)
   })
   
   return parent
 }
+
+

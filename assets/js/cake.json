@@ -1,31 +1,38 @@
 [
     {
-        "ID": "1",
-        "Type of cake": "Carrot Cake"
+        "Type of cake": "Carrot Cake",
+        "Description": "cake that includes sredded carrots and often butter cream icing on the top",
+        "Rating":""
     },
 
     {
-        "ID": "2",
-        "Type of cake": "Chocolate Cake"
+        "Type of cake": "Chocolate Cake",
+        "Description": "cake that includes coco powder to make a chocolaty flavor",
+        "Rating":""
     },
 
     {
-        "ID": "3",
-        "Type of cake": "Vanilla Cake"
+        "Type of cake": "Vanilla Cake",
+        "Description": "",
+        "Rating":""
     },
 
     {
-        "ID": "4",
-        "Type of cake": "Chocolate Cake"
+        "Type of cake": "Chocolate Cake",
+        "Description": "",
+        "Rating":""
     },
 
     {
-        "ID": "5",
-        "Type of cake": "Marble Cake"
+        "Type of cake": "Marble Cake",
+        "Description": "",
+        "Rating":""
     },
 
     {
-        "ID": "6",
-        "Type of cake": "Lemon and Poppy Seed Cake"
+        "Type of cake": "Lemon and Poppy Seed Cake",
+        "Description": "",
+        "Rating":""
     }
+   
 ]
