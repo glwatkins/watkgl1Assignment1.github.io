@@ -6,7 +6,7 @@ const ajaxJsonBtn = document.getElementById('ajax-json-btn')
 const showComment = () => {
     
     //grabbing the value from the text area whitch has an id of comment-id
-  const commentVal = document.getElementById('comment-input').value = "" //adding the ="" clears the post box after it has been posted
+  const commentVal = document.getElementById('comment-input').value //= "" //adding the ="" clears the post box after it has been posted
   //var lm = new Date(document.lastModified);
   let p = document.createElement('p')
   const commentSection = document.getElementById("commentSection")
@@ -32,16 +32,41 @@ const loadJson = () => {
       console.log(p)
       const parent = createoutPutDiv(p)  
       jsonOutput.append(parent) 
-      const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
-      estar.className = 'far fa-star'
-      parent.append(estar)  
+      const estar1 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      estar1.className = 'far fa-star'
+      const estar2 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      estar2.className = 'far fa-star'
+      const estar3 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      estar3.className = 'far fa-star'
+      parent.append(estar1, estar2, estar3) 
+      
       })
   })
 }
 
+// document.addEventListener("click", (event) => {
+//   if(event.target.matches(".far fa-star")){
+//     event.target.closest("p").remove()
+//     // const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+//     // star.className = 'fas fa-star'
+//     // parent.append(star)
+//   }
+// });
+
 document.addEventListener("click", (event) => {
-  if(event.target.matches(".far fa-star")){
-    event.target.closest(".far fa-star").remove()
+  if(event.target.matches(".fa-star")){
+    const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+    star.className = 'fas fa-star'
+    // event.target.append(star)
+    event.target.closest("i").replaceWith(star)
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if(event.target.matches(".fa-star")){
+    const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
+    estar.className = 'far fa-star'
+    event.target.closest("i").replaceWith(estar)
   }
 });
 

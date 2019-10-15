@@ -79,6 +79,15 @@ nav a{
     font-size: 1.5rem;
 }
 
+.mainNav{
+    position: relative;
+    display: inline-block;
+}
+
+.mainNav .sub{
+    position: absolute;
+}
+
 .mainNav:hover .sub{ 
     display: block;
     z-index: 1;
@@ -98,10 +107,7 @@ nav a:hover{
     text-decoration: line-through;
 }
 
-.mainNav{
-    position: relative;
-    display: inline-block;
-}
+
 
 
 /*****************************************
