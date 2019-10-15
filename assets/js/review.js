@@ -55,9 +55,10 @@ document.addEventListener("click", (event) => {
   let allstar = begin.querySelectorAll('.fa-star')
   console.log(allstar)
   let idx = 0;
-  //, and full them up to that point
+  //and full them up to that point
   //have a bool up here that == false
   let full = false
+  
   allstar.forEach((s,i) => {
 
     if (s=== event.target)
