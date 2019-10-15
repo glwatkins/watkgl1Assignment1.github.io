@@ -20,6 +20,7 @@ document.getElementById('comment-data').addEventListener('click', showComment)
 ///////////////////////////////////////////
 //This is the js to allow for loading json
 
+//AJAX loading of json
 const jsonOutput = document.getElementById("jsonOutput")
 
 const loadJson = () => {
@@ -34,11 +35,11 @@ const loadJson = () => {
       jsonOutput.append(parent) 
       const contain = document.createElement('div')
       contain.className = 'containStar'
-      const estar1 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      const estar1 = document.createElement('i') // makes a element called estar1 and is an icon 'i'
       estar1.className = 'far fa-star'
-      const estar2 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      const estar2 = document.createElement('i') // makes a element called estar2 and is an icon 'i'
       estar2.className = 'far fa-star'
-      const estar3 = document.createElement('i') // makes a element called trash and is an icon 'i'
+      const estar3 = document.createElement('i') // makes a element called estar3 and is an icon 'i'
       estar3.className = 'far fa-star'
       contain.append(estar1, estar2, estar3)
       parent.append(contain) 
@@ -46,6 +47,9 @@ const loadJson = () => {
       })
   })
 }
+
+//////////////////////////////////////////////////
+//rating system fulling in the stars
 
 document.addEventListener("click", (event) => {
   if(event.target.matches(".fa-star")){
@@ -89,16 +93,19 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("click", (event) => {
-  if(event.target.matches(".fa-star")){
-    const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
-    estar.className = 'far fa-star'
-    event.target.closest("i").replaceWith(estar)
-  }
-});
+// document.addEventListener("click", (event) => {
+//   if(event.target.matches(".fa-star")){
+//     const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
+//     estar.className = 'far fa-star'
+//     event.target.closest("i").replaceWith(estar)
+//   }
+// });
 
-//attaching to the button
+//attaching to the button to loading the json
 ajaxJsonBtn.addEventListener('click', loadJson)
+
+///////////////////////////////////////////////////
+//displaying the json
 
 //finction to be able create a div from any amont/name of keys
 const createoutPutDiv = (p) =>{
@@ -121,13 +128,5 @@ const createoutPutDiv = (p) =>{
   return parent
 }
 
-// document.addEventListener("click", (event) => {
-//   if(event.target.matches(".far fa-star")){
-//     event.target.closest("p").remove()
-//     // const star = document.createElement('i') // makes a element called trash and is an icon 'i'
-//     // star.className = 'fas fa-star'
-//     // parent.append(star)
-//   }
-// });
 
 
