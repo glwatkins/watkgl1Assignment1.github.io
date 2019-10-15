@@ -72,7 +72,7 @@ header nav
     z-index: 0;
 }
 
-nav a{
+nav a, nav div{
     text-align: center;
     text-decoration: none;
     color: azure;
@@ -86,6 +86,7 @@ nav a{
 
 .mainNav .sub{
     position: absolute;
+    background-color: darkgray; /*makes it have its own little back ground so that it looks like a stand alone menu to the viewer*/
 }
 
 .mainNav:hover .sub{ 

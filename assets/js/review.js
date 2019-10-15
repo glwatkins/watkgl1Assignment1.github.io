@@ -32,33 +32,59 @@ const loadJson = () => {
       console.log(p)
       const parent = createoutPutDiv(p)  
       jsonOutput.append(parent) 
+      const contain = document.createElement('div')
+      contain.className = 'containStar'
       const estar1 = document.createElement('i') // makes a element called trash and is an icon 'i'
       estar1.className = 'far fa-star'
       const estar2 = document.createElement('i') // makes a element called trash and is an icon 'i'
       estar2.className = 'far fa-star'
       const estar3 = document.createElement('i') // makes a element called trash and is an icon 'i'
       estar3.className = 'far fa-star'
-      parent.append(estar1, estar2, estar3) 
+      contain.append(estar1, estar2, estar3)
+      parent.append(contain) 
       
       })
   })
 }
 
-// document.addEventListener("click", (event) => {
-//   if(event.target.matches(".far fa-star")){
-//     event.target.closest("p").remove()
-//     // const star = document.createElement('i') // makes a element called trash and is an icon 'i'
-//     // star.className = 'fas fa-star'
-//     // parent.append(star)
-//   }
-// });
-
 document.addEventListener("click", (event) => {
   if(event.target.matches(".fa-star")){
-    const star = document.createElement('i') // makes a element called trash and is an icon 'i'
-    star.className = 'fas fa-star'
-    // event.target.append(star)
-    event.target.closest("i").replaceWith(star)
+
+  let begin = event.target.closest('.containStar')
+  //querry sellect fas fa-stars in containStar
+  let allstar = begin.querySelectorAll('.fa-star')
+  console.log(allstar)
+  let idx = 0;
+  //, and full them up to that point
+  //have a bool up here that == false
+  let full = false
+  allstar.forEach((s,i) => {
+
+    if (s=== event.target)
+      {
+        idx = i;
+        full = true
+        const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+        star.className = 'fas fa-star'
+        // event.target.append(star)
+        s.replaceWith(star)
+        //set bool to true and full in jusy this star, wile bool is still false full in the stars
+      }
+
+    if (full === false)
+      {
+        const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+        star.className = 'fas fa-star'
+        // event.target.append(star)
+        s.replaceWith(star)
+        console.log(s)
+      }
+      // allstar.replaceWith(star)
+      
+    //for loop through and 
+  })
+
+  console.log(idx)
   }
 });
 
@@ -93,5 +119,14 @@ const createoutPutDiv = (p) =>{
   
   return parent
 }
+
+// document.addEventListener("click", (event) => {
+//   if(event.target.matches(".far fa-star")){
+//     event.target.closest("p").remove()
+//     // const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+//     // star.className = 'fas fa-star'
+//     // parent.append(star)
+//   }
+// });
 
 
