@@ -1,14 +1,16 @@
 const sibmitBtn = document.getElementById('sibmit-btn')
-
+const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
 const showMessage = () => {
     
+    console.log(firstName)
     
-    if (firstName == ''){
+    if (firstName === ""){
+        const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
         alert('Please enter details')
     }
     else{
     //grabbing the value from the text area whitch has an id of comment-id
-        const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
+    const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
         alert(`Thank you for your message ${firstName}`)
     }
   

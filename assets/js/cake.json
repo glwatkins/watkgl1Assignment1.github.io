@@ -1,37 +1,37 @@
 [
     {
         "Type of cake": "Carrot Cake",
-        "Description": "cake that includes sredded carrots and often butter cream icing on the top",
+        "Description": "Cake that includes shredded carrots and often buttercream icing on the top",
         "Rating":""
     },
 
     {
         "Type of cake": "Chocolate Cake",
-        "Description": "cake that includes coco powder to make a chocolaty flavor",
+        "Description": "Cake that includes coco powder to make a chocolaty flavor.",
         "Rating":""
     },
 
     {
         "Type of cake": "Vanilla Cake",
-        "Description": "",
+        "Description": "Cake that has vanilla essence in it so as that it has that flavor. This is considered a basic flavour.",
         "Rating":""
     },
 
     {
-        "Type of cake": "Chocolate Cake",
+        "Type of cake": "Red Velvet Cake",
         "Description": "",
         "Rating":""
     },
 
     {
         "Type of cake": "Marble Cake",
-        "Description": "",
+        "Description": "A combanation of different flavor cake batters, often only 2 or 3 flavors. They are lightly mixed together to create a marble pattern.",
         "Rating":""
     },
 
     {
         "Type of cake": "Lemon and Poppy Seed Cake",
-        "Description": "",
+        "Description": "Includes lemon curd in the middle of a vinilla and poppy seed cake.",
         "Rating":""
     }
    
