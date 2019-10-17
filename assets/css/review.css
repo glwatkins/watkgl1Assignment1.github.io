@@ -42,8 +42,6 @@ header
     justify-content: center;
     color: gray;
     width: 100%;
-    /* margin-right: auto; */
-    /* margin-right: 5%; */
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -52,9 +50,12 @@ header h2
 {
    font-size: 1rem;
    color: lightgrey;
-   /* padding-top: 1.7%;
-   margin-left: 0.7%; */
    align-self: center;
+}
+
+header img {
+   height: 30%;
+   width: 15%;
 }
 
 /*****************************************

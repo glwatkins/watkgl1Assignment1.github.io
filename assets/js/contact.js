@@ -1,27 +1,19 @@
 const sibmitBtn = document.getElementById('sibmit-btn')
-const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
+const firstName = document.getElementById('first-name').value 
 const showMessage = () => {
     
     console.log(firstName)
     
-    if (firstName === ""){
-        const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
-        alert('Please enter details')
+    if (document.getElementById('first-name').value == "" || document.getElementById('last-name').value == "" || document.getElementById('contact-email').value == ""){
+        alert('Please enter ALL details')
     }
     else{
     //grabbing the value from the text area whitch has an id of comment-id
-    const firstName = document.getElementById('first-name').value //= "" //adding the ="" clears the post box after it has been posted
+    const firstName = document.getElementById('first-name').value
         alert(`Thank you for your message ${firstName}`)
     }
-  
-//   //var lm = new Date(document.lastModified);
-//   let p = document.createElement('p')
-//   const commentSection = document.getElementById("commentSection")
-//   const txtOutput = `Comment: ${commentVal}  Date Modifyed: ${document.lastModified}`
-//   p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
-//   commentSection.append(p)  
-
 }
 
 //binding the data to an event handler
 document.getElementById('sibmit-btn').addEventListener('click', showMessage)
+

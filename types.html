@@ -29,23 +29,46 @@
             </header>
         </div>
     
-    <section>
-        <article>
-            <h1>types of cake</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            elementum ultricies aliquam. Curabitur ut ullamcorper est. Proin eu
-            nulla odio. Morbi sed leo justo. Quisque varius mi id turpis
-            sollicitudin, ac gravida felis viverra. Nulla quis aliquam nunc,
-            vitae scelerisque risus. Duis sit amet scelerisque metus, vitae
-            faucibus ipsum. Praesent lacinia viverra nisi, at semper sem congue
-            in. Maecenas eros nibh, sollicitudin ac sollicitudin id, interdum
-            vel tellus. In ullamcorper est diam, at eleifend felis ornare
-            efficitur. Nunc gravida leo tortor, at congue ex blandit vitae.
-            </p>
-        </article>
-    </section>
-</body>
     
+            <h1>types of cake</h1>
+            <fieldset id="jsonOutput">
+                    <input type="button" id="ajax-json-btn" value="Load the cakes!"/>
+                    <!-- <i class="far fa-star"></i> -->
+                    <table>
+                        <td id="jsonOutput"></td>
+                    </table>
+                </fieldset>
+              </div>
+
+              <!-- <form id="listOfItems">
+                <fieldset>
+                  <legend>list of things</legend>
+                  <label for="Item">Item</label>
+                  <input id="Item" type="text" name="Item" />
+    
+                  <input type="submit" value="Submit" />
+                </fieldset>
+              </form> -->
+    
+              <div id="listSection"></div>
+        
+                
+            <h2>post box</h2>
+            <label for="firstname">Name </label>
+                  <input type="text" name="firstname" id="comment-first-name"/>
+                <textarea
+                    name="comment"
+                    id="comment-input"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <br />
+                <input id="comment-data" type="button" value="Post" />
+                <p id="comment-output"></p>
+                <ul id="list-comment-output"></ul>
+                <div id="commentSection"></div>         
+                
+    </section> 
+    <script src="./assets/js/types.js"></script> 
 </body>
 </html>
