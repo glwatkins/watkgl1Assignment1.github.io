@@ -28,39 +28,36 @@
         </header>
     </div>
 
-    
-    <div class="row">  
-            <h1>Review</h1>   
-        
-                <div> 
-                        <fieldset id="jsonOutput">
-                            <input type="button" id="ajax-json-btn" value="Load the cakes!"/>
-                            <!-- <i class="far fa-star"></i> -->
-                            
-                        </fieldset>
-                      </div>
-            
-                      <div id="listSection"></div>
-          
-                
-                <h2>post box</h2>
-                <label >Name </label>
-                      <input type="text" name="firstname" id="comment-first-name"/>
-                    <textarea
-                        name="comment"
-                        id="comment-input"
-                        cols="30"
-                        rows="10"
-                    ></textarea>
-                    <br />
-                    <input id="comment-data" type="button" value="Post" />
-                    <p id="comment-output"></p>
-                    <ul id="list-comment-output"></ul>
-                    <div id="commentSection"></div>         
-                    
-                
-                </div>
-         
+    <h1>Review</h1>
+    <div class="row text">         
+            <div id="reviewJson"> 
+                <fieldset id="jsonOutput">
+                    <input type="button" id="ajax-json-btn" value="Load the cakes!"/>   
+                    <p>If you would like to see all the cakes and a bref description. Click the Load button to review the cake!</p>                        
+                </fieldset>
+            </div>          
+            <div id="listSection"></div>
+
+            <div id="commentSectionReview">
+            <h2>Comment</h2>
+            <fieldset id="ReviewcommentBox">
+                <label >Name</label>
+                <input type="text" name="firstname" id="comment-first-name"/>
+                <label >Comment</label>
+                <textarea
+                    name="comment"
+                    id="comment-input"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <br />
+            </fieldset>
+                <input id="comment-data" type="button" value="Post" />
+                <p id="comment-output"></p>
+                <ul id="list-comment-output"></ul>
+            <div id="commentSection"></div>                       
+            </div>
+         </div>
     <script src="https://kit.fontawesome.com/d32396bb69.js"></script>
     <script src="./assets/js/review.js"></script>
 </body>

@@ -10,12 +10,6 @@ body{
     text-indent: 7%;
 }
 
-.text {
-    display: flex;
-    flex-wrap:wrap;
-    text-indent: 7%;
-}
-
 .topNav{
     display: flex;
 }
@@ -54,6 +48,8 @@ header h2
 header img {
    height: 30%;
    width: 15%;
+   margin: 0;
+   padding: 0;
 }
 
 /*****************************************
@@ -107,9 +103,6 @@ nav a:hover{
     text-decoration: line-through;
 }
 
-
-
-
 /*****************************************
 text
 ******************************************/
@@ -119,6 +112,43 @@ text
     align-self: baseline;
     text-align: left;
     margin: 2%;
+}
+
+.text {
+    display: flex;
+    flex-wrap:wrap;
+    text-indent: 7%;
+}
+
+.text img{
+    width: 60%;
+    margin: auto;
+}
+
+.text #typeJson {
+    align-self: baseline;
+    width: 100%;
+}
+
+.text #commentSectionType{
+    align-self: baseline;
+    width: 100%;
+}
+
+.text #commentSectionType fieldset input[type=text]{
+    background-color: #606060;
+    margin-left: 0;
+}
+
+.text #commentSectionType fieldset textarea{
+    background-color: #606060;
+    margin-left: 0;
+    width: 50%;
+    color: #fdfdfd;
+}
+.text #commentSectionType label{
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /*****************************************

@@ -29,32 +29,39 @@
             </header>
         </div>
     
+        <h1>A few types of cake</h1>
+        <div class="row text">         
+                <div id="typeJson"> 
+                    <fieldset id="jsonOutput">
+                        <input type="button" id="ajax-json-btn" value="Load the cakes!"/>   
+                        <p>If you would like to see all the cakes and a bref description. Click the Load button.</p>                        
+                    </fieldset>
+                    <div id="listSection"></div>
+                </div>          
+                
     
-            <h1>types of cake</h1>
-            <fieldset id="jsonOutput">
-                    <input type="button" id="ajax-json-btn" value="Load the cakes!"/>
-                    
-                </fieldset>
-
-              <div id="listSection"></div>
-        
+                <div id="commentSectionType">
+                <h2>Comment</h2>
+                <fieldset id="ReviewcommentBox">
+                    <label >Name</label>
+                    <input type="text" name="firstname" id="comment-first-name"/>
+                    <label >Comment</label>
+                    <textarea
+                        name="comment"
+                        id="comment-input"
+                        cols="50"
+                        rows="10"
+                    ></textarea>
+                    <br />
                 
-            <h2>post box</h2>
-            <label >Name </label>
-                  <input type="text" name="firstname" id="comment-first-name"/>
-                <textarea
-                    name="comment"
-                    id="comment-input"
-                    cols="30"
-                    rows="10"
-                ></textarea>
-                <br />
-                <input id="comment-data" type="button" value="Post" />
-                <p id="comment-output"></p>
-                <ul id="list-comment-output"></ul>
-                <div id="commentSection"></div>         
-                
-     
+                    <input id="comment-data" type="button" value="Post" />
+                    </fieldset>
+                    <p id="comment-output"></p>
+                    <ul id="list-comment-output"></ul>
+                <div id="commentSection"></div>
+                                   
+                </div>
+        </div>
     <script src="./assets/js/types.js"></script> 
 </body>
 </html>
