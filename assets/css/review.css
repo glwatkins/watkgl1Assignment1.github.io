@@ -32,10 +32,10 @@ header
     align-self: center;
     background-color: darkgray;  
     justify-content: center;
-    color: gray;
+    color: rgb(46, 175, 137);
     width: 100%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 header h2
@@ -130,12 +130,27 @@ text
     width: 100%;
 }
 
+.text #reviewJson {
+    align-self: baseline;
+    width: 100%;
+}
+
 .text #commentSectionType{
     align-self: baseline;
     width: 100%;
 }
 
+.text #commentSectionReview{
+    align-self: baseline;
+    width: 100%;
+}
+
 .text #commentSectionType fieldset input[type=text]{
+    background-color: #606060;
+    margin-left: 0;
+}
+
+.text #commentSectionReview fieldset input[type=text]{
     background-color: #606060;
     margin-left: 0;
 }
@@ -146,7 +161,19 @@ text
     width: 50%;
     color: #fdfdfd;
 }
+
+.text #commentSectionReview fieldset textarea{
+    background-color: #606060;
+    margin-left: 0;
+    width: 50%;
+    color: #fdfdfd;
+}
 .text #commentSectionType label{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.text #commentSectionReview label{
     margin-left: 0;
     padding-left: 0;
 }
