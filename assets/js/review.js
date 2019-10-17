@@ -5,15 +5,22 @@ const ajaxJsonBtn = document.getElementById('ajax-json-btn')
 
 const showComment = () => {
     
+  if (document.getElementById('comment-input').value == "" || document.getElementById('comment-first-name').value == ""){
+    alert('Please comment and name')
+  }
+  else{
     //grabbing the value from the text area whitch has an id of comment-id
-  const commentVal = document.getElementById('comment-input').value 
-  const commentName = document.getElementById('comment-first-name').value
-  //var lm = new Date(document.lastModified);
-  let p = document.createElement('p')
-  const commentSection = document.getElementById("commentSection")
-  const txtOutput = `Name: ${commentName} Comment: ${commentVal}  Date Posted: ${document.lastModified}`
-  p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
-  commentSection.append(p)  
+    const commentVal = document.getElementById('comment-input').value 
+    const commentName = document.getElementById('comment-first-name').value
+    let p = document.createElement('p')
+    const commentSection = document.getElementById("commentSection")
+    const txtOutput = `Name: ${commentName} Comment: ${commentVal}  Date Posted: ${document.lastModified}`
+    p.appendChild(document.createTextNode(txtOutput)) 
+    commentSection.append(p) 
+
+    document.getElementById('comment-input').value = ""
+    document.getElementById('comment-first-name').value = "" 
+  } 
 
 }
 
@@ -58,12 +65,9 @@ document.addEventListener("click", (event) => {
   if(event.target.matches(".fa-star")){
 
   let begin = event.target.closest('.containStar')
-  //querry sellect fas fa-stars in containStar
   let allstar = begin.querySelectorAll('.fa-star')
   console.log(allstar)
   let idx = 0;
-  //and full them up to that point
-  //have a bool up here that == false
   let full = false
   
   allstar.forEach((s,i) => {
@@ -72,37 +76,23 @@ document.addEventListener("click", (event) => {
       {
         idx = i;
         full = true
-        const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+        const star = document.createElement('i') 
         star.className = 'fas fa-star'
-        // event.target.append(star)
         s.replaceWith(star)
-        //set bool to true and full in jusy this star, wile bool is still false full in the stars
       }
 
     if (full === false)
       {
-        const star = document.createElement('i') // makes a element called trash and is an icon 'i'
+        const star = document.createElement('i')
         star.className = 'fas fa-star'
-        // event.target.append(star)
         s.replaceWith(star)
         console.log(s)
-      }
-      // allstar.replaceWith(star)
-      
-    //for loop through and 
+      } 
   })
 
   console.log(idx)
   }
 });
-
-// document.addEventListener("click", (event) => {
-//   if(event.target.matches(".fa-star")){
-//     const estar = document.createElement('i') // makes a element called trash and is an icon 'i'
-//     estar.className = 'far fa-star'
-//     event.target.closest("i").replaceWith(estar)
-//   }
-// });
 
 //attaching to the button to loading the json
 ajaxJsonBtn.addEventListener('click', loadJson)
@@ -111,15 +101,12 @@ ajaxJsonBtn.addEventListener('click', loadJson)
 //displaying the json
 
 //finction to be able create a div from any amont/name of keys
-const createoutPutDiv = (p) =>{
-  //creating an element div called parent 
+const createoutPutDiv = (p) =>{ 
   const parent = document.createElement("div")
-  parent.style.paddingBottom = "2vw" // just a bit of pading at the bottom of each entry
+  parent.style.paddingBottom = "2vw" 
   parent.style.textIndent = "3vw"
-  const keys =  Object.keys(p) // taking each object in p and assigning it to keys -- this is what allows us not to specify the definitive values(ie ID) there for make the json file scalible
+  const keys =  Object.keys(p) // taking each object in p and assigning it to keys
  
-  //for each is a function so you need to writ like tis to itterate through the keys(each id/name)
-  //items is just each id or firstName
   keys.forEach(item => {
     const val = p[item]
     const div = document.createElement("div")
@@ -130,6 +117,3 @@ const createoutPutDiv = (p) =>{
   
   return parent
 }
-
-
-

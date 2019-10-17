@@ -1,20 +1,23 @@
-
-
 ////////////////////////////////////////////////
 //This is the js to apllow for posting a comment
 
 const showComment = () => {
     
-    //grabbing the value from the text area whitch has an id of comment-id
-  const commentVal = document.getElementById('comment-input').value 
-  const commentName = document.getElementById('comment-first-name').value
-  //var lm = new Date(document.lastModified);
-  let p = document.createElement('p')
-  const commentSection = document.getElementById("commentSection")
-  const txtOutput = `Name: ${commentName} Comment: ${commentVal}  Date Posted: ${document.lastModified}`
-  p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
-  commentSection.append(p)  
+    if (document.getElementById('comment-input').value == "" || document.getElementById('comment-first-name').value == ""){
+        alert('Please comment and name')
+    }
+    else{
+        const commentVal = document.getElementById('comment-input').value 
+        const commentName = document.getElementById('comment-first-name').value
+        let p = document.createElement('p')
+        const commentSection = document.getElementById("commentSection")
+        const txtOutput = `Name: ${commentName} Comment: ${commentVal}  Date Posted: ${document.lastModified}`
+        p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
+        commentSection.append(p) 
 
+        document.getElementById('comment-input').value = ""
+        document.getElementById('comment-first-name').value = "" 
+    }  
 }
 
 //binding the data to an event handler
@@ -35,14 +38,10 @@ const loadJson = () => {
    data.forEach(p => {
       console.log(p)
       const parent = createoutPutDiv(p)  
-      jsonOutput.append(parent) 
-      
-      
+      jsonOutput.append(parent)            
       })
   })
 }
-
-
 
 //attaching to the button to loading the json
 ajaxJsonBtn.addEventListener('click', loadJson)
@@ -54,12 +53,10 @@ ajaxJsonBtn.addEventListener('click', loadJson)
 const createoutPutDiv = (p) =>{
   //creating an element div called parent 
   const parent = document.createElement("div")
-  parent.style.paddingBottom = "2vw" // just a bit of pading at the bottom of each entry
+  parent.style.paddingBottom = "2vw" 
   parent.style.textIndent = "3vw"
-  const keys =  Object.keys(p) // taking each object in p and assigning it to keys -- this is what allows us not to specify the definitive values(ie ID) there for make the json file scalible
+  const keys =  Object.keys(p) 
  
-  //for each is a function so you need to writ like tis to itterate through the keys(each id/name)
-  //items is just each id or firstName
   keys.forEach(item => {
     const val = p[item]
     const div = document.createElement("div")
@@ -70,5 +67,3 @@ const createoutPutDiv = (p) =>{
   
   return parent
 }
-
-
