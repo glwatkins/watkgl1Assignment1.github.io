@@ -1,37 +1,37 @@
 [
     {
         "Type of cake": "Carrot Cake",
-        "Description": "Cake that includes shredded carrots and often buttercream icing on the top",
+        "Description": "Cake that includes shredded carrots and often has buttercream icing on the top",
         "Ease to make":"Medium"
     },
 
     {
         "Type of cake": "Chocolate Cake",
-        "Description": "Cake that includes coco powder to make a chocolaty flavor.",
+        "Description": "Cake that includes cocoa powder to make a chocolatey flavour.",
         "Ease to make":"Easy"
     },
 
     {
         "Type of cake": "Vanilla Cake",
-        "Description": "Cake that has vanilla essence in it so as that it has that flavor. This is considered a basic flavour.",
+        "Description": "Cake that has vanilla essence in it so as that it has that flavour. This is considered a basic flavour.",
         "Ease to make":"Easy"
     },
 
     {
         "Type of cake": "Red Velvet Cake",
-        "Description": "",
+        "Description": "Red cake",
         "Ease to make":"Medium"
     },
 
     {
         "Type of cake": "Marble Cake",
-        "Description": "A combanation of different flavor cake batters, often only 2 or 3 flavors. They are lightly mixed together to create a marble pattern.",
+        "Description": "A combination of different flavour cake batters, often only 2 or 3 flavours. They are lightly mixed together to create a marble pattern.",
         "Ease to make":"Difficult"
     },
 
     {
         "Type of cake": "Lemon and Poppy Seed Cake",
-        "Description": "Includes lemon curd in the middle of a vinilla and poppy seed cake.",
+        "Description": "Includes lemon curd in the middle of a vanilla and poppy seed cake.",
         "Ease to make":"Medium"
     }
    
